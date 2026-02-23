@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Imagen con borde</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section>
+      <h2>Actividad 1</h2>
+      <img
+        id="miImagen"
+        src="./images/imagen.jpg"
+        alt="Imagen"
+        onclick="
+          let miImagen = document.querySelector('#miImagen');
+
+          if (miImagen.style.border == '2px solid red') {
+            miImagen.style.border = 'none';
+          } else {
+            miImagen.style.border = '2px solid red';
+          }
+        "
+      />
+    </section>
+
+    <section>
+      <h2>Actividad 2</h2>
+
+      <h3>Selecciona la cantidad de stickers</h3>
+
+      <div class="container-cards">
+        <div class="card">
+          <img src="./images/sticker-1.jpg" alt="" />
+          <input class="sticker-1" type="number" name="" id="" />
+        </div>
+
+        <div class="card">
+          <img src="./images/sticker-2.jpg" alt="" />
+          <input class="sticker-2" type="number" name="" id="" />
+        </div>
+
+        <div class="card">
+          <img src="./images/sticker-3.jpg" alt="" />
+          <input class="sticker-3" type="number" name="" id="" />
+        </div>
+      </div>
+
+      <button onclick="calcular()">Calcular</button>
+      <p class="texto-total"></p>
+    </section>
+
+    <section>
+      <h2>Actividad 3</h2>
+      <h4>Ingrese su contraseña</h4>
+      <div class="inputs-block">
+        <select name="clave" id="digito-1">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+
+        <select name="clave" id="digito-2">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+
+        <select name="clave" id="digito-3">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+      </div>
+
+      <button onclick="verificarContraseña()">Ingresar</button>
+      <p>Tu contraseña es <span class="ingreso"></span></p>
+    </section>
+
+    <script src="./js/javascript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  gap: 10px;
+  flex-flow: column;
+  padding: 10px;
+}
+
+section {
+  display: flex;
+  flex-flow: column;
+  flex: 1 1 300px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(0, 0, 0);
+
+  & img {
+    max-width: 300px;
+    max-height: 300px;
+    margin-bottom: 30px;
+    
+  }
+}
+
+.container-cards {
+  display: flex;
+  flex-flow: row;
+  flex: 1 1 200px;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 10px;
+}
+
+.card {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  align-items: center;
+
+  & img {
+    max-width: 300px;
+    max-height: 200px;
+  }
+
+  & input {
+    justify-items: center;
+    max-width: 50px;
+  }
+}
+
+button {
+  margin: 10px;
+  padding: 8px;
+  border-radius: 50px;
+}
+
+.inputs-block {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 5px;
+}
